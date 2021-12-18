@@ -1,0 +1,20 @@
+-   repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.9.0  # Use the ref you want to point at
+    hooks:
+    -   id: python-use-type-annotations
+
+- repo: local
+
+  hooks:
+    - id: check-case-conflict
+      name: check-case-conflict
+      entry: check-case-conflict
+      language: system
+      types: [ python ]
+
+    - id: check-added-large-files
+      name: check-added-large-files
+      entry: check-added-large-files
+      language: system
+      types: [ python ]
+
